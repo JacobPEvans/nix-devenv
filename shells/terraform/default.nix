@@ -5,7 +5,11 @@
 #
 # NOTE: Caller must pass pkgs with config.allowUnfree = true for Terraform's BSL license.
 { pkgs }:
+let
+  awsShell = import ../aws/default.nix { inherit pkgs; };
+in
 pkgs.mkShell {
+  inputsFrom = [ awsShell ];
   buildInputs = with pkgs; [
     # === Infrastructure as Code ===
     terraform
@@ -26,14 +30,14 @@ pkgs.mkShell {
     sops
     age
 
-    # === Cloud & Development ===
-    awscli2
+    # === Development ===
     git
     python3
 
     # === Utilities ===
     jq
     yq
+    # NOTE: awscli2 + aws-vault inherited from awsShell via inputsFrom
   ];
 
   shellHook = ''

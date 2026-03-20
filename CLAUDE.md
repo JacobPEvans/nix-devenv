@@ -109,10 +109,12 @@ nix flake init -t github:JacobPEvans/nix-devenv#mkshell
 | Shell | Description |
 |-------|-------------|
 | ansible | Ansible, ansible-lint, molecule, sops, age |
-| terraform | Terraform, terragrunt, opentofu, tflint, tfsec, trivy, awscli2 |
+| terraform | Terraform, terragrunt, opentofu, tflint, tfsec, trivy (composes aws shell) |
 | kubernetes | kubectl, helm, helmfile, kustomize, k9s, kubeconform, kind |
 | containers | docker, buildkit, crane, skopeo |
 | splunk-dev | Python 3.9 via uv (EOL exception) |
+| aws | awscli2, aws-vault |
+| azure | azure-cli |
 
 ### devenv (Python/AI)
 
