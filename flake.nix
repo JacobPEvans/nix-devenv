@@ -44,10 +44,10 @@
         {
           # Minimal shell for working on this repo
           default = pkgs.mkShell {
-            packages = with pkgs; [
-              nixfmt-tree
-              nil
-              nix-diff
+            packages = [
+              pkgs.nixfmt-tree
+              pkgs.nil
+              pkgs.nix-diff
             ];
           };
 
