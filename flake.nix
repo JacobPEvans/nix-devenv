@@ -42,6 +42,15 @@
           };
         in
         {
+          # Minimal shell for working on this repo
+          default = pkgs.mkShell {
+            packages = with pkgs; [
+              nixfmt-tree
+              nil
+              nix-diff
+            ];
+          };
+
           # mkShell shells (infrastructure tooling)
           ansible = import ./shells/ansible/default.nix { inherit pkgs; };
           terraform = import ./shells/terraform/default.nix { pkgs = pkgsUnfree; };
