@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/JacobPEvans/nix-devenv/compare/v0.2.1...v0.3.0) (2026-03-22)
+
+
+### Features
+
+* **orchestrator:** sync all pyproject.toml extras in devenv shell ([8bfcd16](https://github.com/JacobPEvans/nix-devenv/commit/8bfcd16aa57fc07d603f9b270a265c76f5fa6ec3))
+
 ## [0.2.1](https://github.com/JacobPEvans/nix-devenv/compare/v0.2.0...v0.2.1) (2026-03-22)
 
 
