@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/JacobPEvans/nix-devenv/compare/v0.2.0...v0.2.1) (2026-03-22)
+
+
+### Bug Fixes
+
+* add default devShell for repo development ([cd540e0](https://github.com/JacobPEvans/nix-devenv/commit/cd540e02270118423af639df5cd0666c60efc11f))
+
 ## [0.2.0](https://github.com/JacobPEvans/nix-devenv/compare/v0.1.0...v0.2.0) (2026-03-20)
 
 
