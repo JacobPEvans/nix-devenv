@@ -9,7 +9,7 @@
 {
   languages.python = {
     enable = true;
-    package = pkgs.python314;
+    package = import ../lib/python.nix { inherit pkgs; };
     uv = {
       enable = true;
       sync.enable = true;
