@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/JacobPEvans/nix-devenv/compare/v0.3.0...v0.3.1) (2026-03-29)
+
+
+### Bug Fixes
+
+* **deps:** centralize Python version in lib/python.nix ([#9](https://github.com/JacobPEvans/nix-devenv/issues/9)) ([a9486b8](https://github.com/JacobPEvans/nix-devenv/commit/a9486b8dc0d48c1dc066ff90ed2b791615c7faa8))
+
 ## [0.3.0](https://github.com/JacobPEvans/nix-devenv/compare/v0.2.1...v0.3.0) (2026-03-22)
 
 
