@@ -37,6 +37,7 @@ pkgs.mkShell {
     # === Utilities ===
     jq
     yq
+    pre-commit
     # NOTE: awscli2 + aws-vault inherited from awsShell via inputsFrom
   ];
 

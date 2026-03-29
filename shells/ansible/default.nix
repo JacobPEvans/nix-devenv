@@ -2,33 +2,43 @@
 #
 # Minimal Ansible-only environment for configuration management repositories.
 # No Terraform/Packer overhead - focused on Ansible, linting, and testing.
-{ pkgs }:
+{
+  pkgs,
+  extraPackages ? [ ],
+  extraPythonPackages ? (_: [ ]),
+}:
 pkgs.mkShell {
-  buildInputs = with pkgs; [
-    # === Configuration Management ===
-    ansible
-    ansible-lint
-    molecule
+  buildInputs =
+    with pkgs;
+    [
+      # === Configuration Management ===
+      ansible
+      ansible-lint
+      molecule
 
-    # === Secrets Management ===
-    sops
-    age
+      # === Secrets Management ===
+      sops
+      age
 
-    # === Python (Ansible dependencies) ===
-    (python3.withPackages (
-      ps: with ps; [
-        paramiko
-        jsondiff
-        pyyaml
-        jinja2
-      ]
-    ))
+      # === Python (Ansible dependencies) ===
+      (python3.withPackages (
+        ps:
+        with ps;
+        [
+          paramiko
+          jsondiff
+          pyyaml
+          jinja2
+        ]
+        ++ (extraPythonPackages ps)
+      ))
 
-    # === Utilities ===
-    jq
-    yq
-    pre-commit
-  ];
+      # === Utilities ===
+      jq
+      yq
+      pre-commit
+    ]
+    ++ extraPackages;
 
   shellHook = ''
     if [ -z "''${DIRENV_IN_ENVRC:-}" ]; then
