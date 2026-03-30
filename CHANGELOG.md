@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/JacobPEvans/nix-devenv/compare/v0.3.1...v0.4.0) (2026-03-30)
+
+
+### Features
+
+* prepare shells for cross-repo DRY consolidation ([#11](https://github.com/JacobPEvans/nix-devenv/issues/11)) ([c234019](https://github.com/JacobPEvans/nix-devenv/commit/c234019ab00ae52dac005a01c622f7d4fffaa8ba))
+
 ## [0.3.1](https://github.com/JacobPEvans/nix-devenv/compare/v0.3.0...v0.3.1) (2026-03-29)
 
 
