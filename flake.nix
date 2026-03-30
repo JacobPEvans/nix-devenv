@@ -53,6 +53,14 @@
 
           # mkShell shells (infrastructure tooling)
           ansible = import ./shells/ansible/default.nix { inherit pkgs; };
+          ansible-apps = import ./shells/ansible/default.nix {
+            inherit pkgs;
+            extraPackages = [ pkgs.doppler ];
+            extraPythonPackages = ps: [
+              ps.docker
+              ps.httplib2
+            ];
+          };
           terraform = import ./shells/terraform/default.nix { pkgs = pkgsUnfree; };
           kubernetes = import ./shells/kubernetes/default.nix { inherit pkgs; };
           containers = import ./shells/containers/default.nix { inherit pkgs; };
