@@ -56,11 +56,10 @@
           ansible-apps = import ./shells/ansible/default.nix {
             inherit pkgs;
             extraPackages = [ pkgs.doppler ];
-            extraPythonPackages =
-              ps: with ps; [
-                docker
-                httplib2
-              ];
+            extraPythonPackages = ps: [
+              ps.docker
+              ps.httplib2
+            ];
           };
           terraform = import ./shells/terraform/default.nix { pkgs = pkgsUnfree; };
           kubernetes = import ./shells/kubernetes/default.nix { inherit pkgs; };

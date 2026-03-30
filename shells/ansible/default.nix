@@ -23,13 +23,12 @@ pkgs.mkShell {
       # === Python (Ansible dependencies) ===
       (python3.withPackages (
         ps:
-        with ps;
-        [
+        (with ps; [
           paramiko
           jsondiff
           pyyaml
           jinja2
-        ]
+        ])
         ++ (extraPythonPackages ps)
       ))
 
