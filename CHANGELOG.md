@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/JacobPEvans/nix-devenv/compare/v0.4.0...v0.4.1) (2026-03-31)
+
+
+### Bug Fixes
+
+* **deps:** switch to nixpkgs-25.11-darwin and update all flake inputs ([#13](https://github.com/JacobPEvans/nix-devenv/issues/13)) ([28208ca](https://github.com/JacobPEvans/nix-devenv/commit/28208ca13889637faf8e3b30da9c7a24448e33c1))
+
 ## [0.4.0](https://github.com/JacobPEvans/nix-devenv/compare/v0.3.1...v0.4.0) (2026-03-30)
 
 
