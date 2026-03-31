@@ -2,7 +2,7 @@
   description = "Splunk development (Python 3.9 via uv - EOL exception)";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-25.11-darwin";
   };
 
   outputs =

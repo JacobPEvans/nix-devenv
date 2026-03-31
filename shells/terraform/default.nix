@@ -19,7 +19,7 @@ pkgs.mkShell {
     tflint
 
     # === Security & Compliance ===
-    # checkov and terrascan removed: checkov is broken in nixpkgs-unstable
+    # checkov and terrascan removed: checkov is broken in nixpkgs
     # (pycep-parser fails to build with uv_build backend). Both hooks are
     # also disabled in terraform-proxmox .pre-commit-config.yaml. Re-add
     # when the upstream nixpkgs pycep-parser derivation is fixed.
