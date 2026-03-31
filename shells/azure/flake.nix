@@ -2,7 +2,7 @@
   description = "Azure cloud CLI development environment";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-25.11-darwin";
   };
 
   outputs =

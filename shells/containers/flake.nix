@@ -2,7 +2,7 @@
   description = "Container development, building, and registry environment";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-25.11-darwin";
   };
 
   outputs =

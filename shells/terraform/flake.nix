@@ -2,7 +2,7 @@
   description = "Terraform/Terragrunt infrastructure as code development environment";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-25.11-darwin";
   };
 
   outputs =

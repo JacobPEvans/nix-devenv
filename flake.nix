@@ -2,7 +2,7 @@
   description = "Reusable dev shells in Nix — Terraform, Ansible, Kubernetes, AI/ML, and more";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-25.11-darwin";
 
     devenv = {
       url = "github:cachix/devenv";
