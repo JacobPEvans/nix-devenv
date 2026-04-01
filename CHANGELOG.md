@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/JacobPEvans/nix-devenv/compare/v0.4.1...v0.4.2) (2026-04-01)
+
+
+### Bug Fixes
+
+* **renovate:** add Renovate config extending org-wide preset ([#15](https://github.com/JacobPEvans/nix-devenv/issues/15)) ([633446c](https://github.com/JacobPEvans/nix-devenv/commit/633446cc5851099ab8e83ac4bf5cdac9ded3a8be))
+
 ## [0.4.1](https://github.com/JacobPEvans/nix-devenv/compare/v0.4.0...v0.4.1) (2026-03-31)
 
 
