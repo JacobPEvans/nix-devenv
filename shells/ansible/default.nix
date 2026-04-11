@@ -32,6 +32,9 @@ pkgs.mkShell {
         ++ (extraPythonPackages ps)
       ))
 
+      # === Testing ===
+      bats # Bash Automated Testing System — moved from nix-home global env (project-scoped tool)
+
       # === Utilities ===
       jq
       yq

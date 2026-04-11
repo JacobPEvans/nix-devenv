@@ -91,6 +91,7 @@
       # Import these in custom devenv shells for reusable Python stacks:
       #   modules = [ nix-devenv.devenvModules.python-ai ];
       devenvModules = {
+        python-base = ./modules/python-base.nix;
         python-ai = ./modules/python-ai.nix;
         python-ml = ./modules/python-ml.nix;
       };
