@@ -19,8 +19,7 @@
 { pkgs, ... }:
 {
   packages = with pkgs; [
-    ruff # Fast Python linter and formatter (replaces flake8, isort, black for most cases)
-    black # Opinionated Python code formatter
+    ruff # Fast Python linter and formatter (replaces flake8, isort, black)
     mypy # Static type checker for Python
     uv # Fast Python package manager (replaces pip/pipx)
   ];
