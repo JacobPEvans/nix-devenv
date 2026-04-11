@@ -28,6 +28,9 @@ pkgs.mkShell {
     # === Local Cluster Testing ===
     kind # Kubernetes IN Docker
 
+    # === CI/CD Linting ===
+    actionlint # GitHub Actions workflow linter — moved from nix-home global env (project-scoped tool)
+
     # === Utilities ===
     git
     jq
