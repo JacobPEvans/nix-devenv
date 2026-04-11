@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/JacobPEvans/nix-devenv/compare/v0.4.2...v0.5.0) (2026-04-11)
+
+
+### Features
+
+* receive project-scoped tools from nix-home; add python-base module ([#17](https://github.com/JacobPEvans/nix-devenv/issues/17)) ([f9a43fa](https://github.com/JacobPEvans/nix-devenv/commit/f9a43fa95ff2232f82e24a0298ebb5926e17b6b1))
+
 ## [0.4.2](https://github.com/JacobPEvans/nix-devenv/compare/v0.4.1...v0.4.2) (2026-04-01)
 
 
