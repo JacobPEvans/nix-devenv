@@ -112,6 +112,7 @@ nix flake init -t github:JacobPEvans/nix-devenv#mkshell
 | terraform | Terraform, terragrunt, opentofu, tflint, tfsec, trivy (composes aws shell) |
 | kubernetes | kubectl, helm, helmfile, kustomize, k9s, kubeconform, kind |
 | containers | docker, buildkit, crane, skopeo |
+| typescript | nodejs 22 LTS, pnpm, typescript, typescript-language-server, biome (formatter/linter/LSP) |
 | splunk-dev | Python 3.9 via uv (EOL exception) |
 | aws | awscli2, aws-vault |
 | azure | azure-cli |

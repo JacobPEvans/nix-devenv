@@ -64,6 +64,7 @@
           terraform = import ./shells/terraform/default.nix { pkgs = pkgsUnfree; };
           kubernetes = import ./shells/kubernetes/default.nix { inherit pkgs; };
           containers = import ./shells/containers/default.nix { inherit pkgs; };
+          typescript = import ./shells/typescript/default.nix { inherit pkgs; };
           splunk-dev = import ./shells/splunk-dev/default.nix { inherit pkgs; };
           aws = import ./shells/aws/default.nix { inherit pkgs; };
           azure = import ./shells/azure/default.nix { inherit pkgs; };
