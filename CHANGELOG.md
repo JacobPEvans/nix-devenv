@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/JacobPEvans/nix-devenv/compare/v0.5.0...v0.5.1) (2026-04-26)
+
+
+### Bug Fixes
+
+* **ci:** upgrade renovate to v5 (json5) ([#20](https://github.com/JacobPEvans/nix-devenv/issues/20)) ([19bd950](https://github.com/JacobPEvans/nix-devenv/commit/19bd95046588dff1764f8de2f72e2e9d934c16a9))
+
 ## [0.5.0](https://github.com/JacobPEvans/nix-devenv/compare/v0.4.2...v0.5.0) (2026-04-11)
 
 
