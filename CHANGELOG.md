@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.2](https://github.com/JacobPEvans/nix-devenv/compare/v0.5.1...v0.5.2) (2026-05-03)
+
+
+### Bug Fixes
+
+* **ci:** remove deprecated app-id secret passthrough ([bd3ebcf](https://github.com/JacobPEvans/nix-devenv/commit/bd3ebcf9bf964560827bc675fded38665dfe8c6b))
+
 ## [0.5.1](https://github.com/JacobPEvans/nix-devenv/compare/v0.5.0...v0.5.1) (2026-04-26)
 
 
