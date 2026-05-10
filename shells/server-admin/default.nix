@@ -29,8 +29,7 @@ pkgs.mkShell {
       dnsmasq # DHCP + TFTP for PXE staging (cross-platform)
 
       # === ISO / firmware ===
-      xorriso # ISO creation/manipulation (also -as mkisofs)
-      libisoburn # companion to xorriso
+      xorriso # ISO creation/manipulation (also -as mkisofs); includes libisoburn
       cabextract # extract Dell firmware .exe / .cab bundles
 
       # === Network diagnostics ===
@@ -65,7 +64,7 @@ pkgs.mkShell {
       echo ""
       echo "iDRAC6 Virtual Console:"
       echo "  Open https://<idrac_ip> → Launch Virtual Console → .jnlp"
-      echo "  Requires OpenWebStart (brew install --cask openwebstart)"
+      echo "  Requires OpenWebStart — see https://openwebstart.com or nixpkgs#openwebstart"
       echo ""
     fi
   '';
